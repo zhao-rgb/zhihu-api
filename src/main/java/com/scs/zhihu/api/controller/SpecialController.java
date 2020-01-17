@@ -22,7 +22,7 @@ public class SpecialController {
     private SpecialService specialService;
 
     @GetMapping
-    public Result getRecnet() {
+    public Result getRecent() {
         return Result.success(specialService.selectRecent());
     }
 
