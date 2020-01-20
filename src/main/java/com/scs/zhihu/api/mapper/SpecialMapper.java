@@ -44,4 +44,5 @@ public interface SpecialMapper {
                     many =@Many(select = "com.scs.zhihu.api.mapper.SectionMapper.getSectionBySpecialId")),
     })
     List<Map> selectAll();
+
 }

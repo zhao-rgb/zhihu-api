@@ -3,6 +3,7 @@ package com.scs.zhihu.api.controller;
 import com.scs.zhihu.api.common.Result;
 import com.scs.zhihu.api.service.RoundTableService;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -29,5 +30,10 @@ public class RoundTableController {
     @GetMapping(value = "/all")
     public Result getAllRoundTable(){
         return Result.success(roundTableService.selectAllRoundTable());
+    }
+
+    @PostMapping(value = "page")
+    public Result getByPage(int currentPage, int count){
+        return Result.success(roundTableService.selectByPage(currentPage,count));
     }
 }

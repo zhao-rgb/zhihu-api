@@ -38,4 +38,13 @@ public interface RoundTableMapper {
             @Result(property = "includeCount",column = "include_count",javaType = Integer.class)
     })
     List<Map> selectAllRoundTable();
+
+    /**
+     * 分页
+     * @param dealCount
+     * @param count
+     * @return
+     */
+    @Select("SELECT id , name , banner , url_token , visits_count , include_count FROM t_round_table ORDER BY id LIMIT #{dealCount} , #{count}")
+    List<RoundTable> selectByPage(int dealCount, int count);
 }

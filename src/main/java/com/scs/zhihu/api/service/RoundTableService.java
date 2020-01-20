@@ -24,4 +24,12 @@ public interface RoundTableService {
      * @return
      */
     List<Map> selectAllRoundTable();
+
+    /**
+     * 分页
+     * @param currentPage
+     * @param count
+     * @return
+     */
+    List<RoundTable> selectByPage(int currentPage, int count);
 }

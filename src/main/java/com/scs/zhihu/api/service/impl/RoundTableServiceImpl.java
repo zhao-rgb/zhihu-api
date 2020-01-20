@@ -30,4 +30,10 @@ public class RoundTableServiceImpl implements RoundTableService {
     public List<Map> selectAllRoundTable() {
         return roundTableMapper.selectAllRoundTable();
     }
+
+    @Override
+    public List<RoundTable> selectByPage(int currentPage, int count) {
+        int dealCount = (currentPage -1) * count;
+        return roundTableMapper.selectByPage(dealCount,count);
+    }
 }
