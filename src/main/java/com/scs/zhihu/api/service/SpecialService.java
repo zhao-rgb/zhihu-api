@@ -1,6 +1,6 @@
 package com.scs.zhihu.api.service;
 
-import com.scs.zhihu.api.entity.Special;
+import com.scs.zhihu.api.domain.entity.Special;
 
 import java.util.List;
 import java.util.Map;

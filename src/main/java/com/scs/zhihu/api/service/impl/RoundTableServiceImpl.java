@@ -1,6 +1,6 @@
 package com.scs.zhihu.api.service.impl;
 
-import com.scs.zhihu.api.entity.RoundTable;
+import com.scs.zhihu.api.domain.entity.RoundTable;
 import com.scs.zhihu.api.mapper.RoundTableMapper;
 import com.scs.zhihu.api.service.RoundTableService;
 import org.springframework.stereotype.Service;

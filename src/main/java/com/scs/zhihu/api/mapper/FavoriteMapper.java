@@ -1,6 +1,6 @@
 package com.scs.zhihu.api.mapper;
 
-import com.scs.zhihu.api.entity.Favorite;
+import com.scs.zhihu.api.domain.entity.Favorite;
 import org.apache.ibatis.annotations.Result;
 import org.apache.ibatis.annotations.Results;
 import org.apache.ibatis.annotations.Select;

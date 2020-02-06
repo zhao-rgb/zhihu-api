@@ -1,6 +1,6 @@
 package com.scs.zhihu.api.service.impl;
 
-import com.scs.zhihu.api.entity.Special;
+import com.scs.zhihu.api.domain.entity.Special;
 import com.scs.zhihu.api.mapper.SpecialMapper;
 import com.scs.zhihu.api.service.SpecialService;
 import org.springframework.stereotype.Service;

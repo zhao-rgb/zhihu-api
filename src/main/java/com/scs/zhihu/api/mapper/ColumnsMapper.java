@@ -1,6 +1,6 @@
 package com.scs.zhihu.api.mapper;
 
-import com.scs.zhihu.api.entity.Columns;
+import com.scs.zhihu.api.domain.entity.Columns;
 import org.apache.ibatis.annotations.Result;
 import org.apache.ibatis.annotations.Results;
 import org.apache.ibatis.annotations.Select;
@@ -20,7 +20,7 @@ public interface ColumnsMapper {
      * 查询最新专栏
      * @return list<Columns>
      */
-    @Select("SELECT * FROM t_columns ORDER BY id ASC LIMIT 0,4")
+    @Select("SELECT * FROM t_columns ORDER BY id ASC LIMIT 1,4")
     List<Columns> selectRecentColumns();
 
     @Select("SELECT * FROM t_columns")

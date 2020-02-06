@@ -1,6 +1,6 @@
 package com.scs.zhihu.api.service.impl;
 
-import com.scs.zhihu.api.entity.Columns;
+import com.scs.zhihu.api.domain.entity.Columns;
 import com.scs.zhihu.api.mapper.ColumnsMapper;
 import com.scs.zhihu.api.service.ColumnsService;
 import org.springframework.stereotype.Service;

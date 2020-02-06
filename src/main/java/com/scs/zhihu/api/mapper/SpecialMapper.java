@@ -1,12 +1,11 @@
 package com.scs.zhihu.api.mapper;
 
-import com.scs.zhihu.api.entity.Special;
+import com.scs.zhihu.api.domain.entity.Special;
 import org.apache.ibatis.annotations.Many;
 import org.apache.ibatis.annotations.Result;
 import org.apache.ibatis.annotations.Results;
 import org.apache.ibatis.annotations.Select;
 
-import javax.xml.crypto.Data;
 import java.util.Date;
 import java.util.List;
 import java.util.Map;

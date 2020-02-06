@@ -1,6 +1,6 @@
 package com.scs.zhihu.api.service;
 
-import com.scs.zhihu.api.entity.RoundTable;
+import com.scs.zhihu.api.domain.entity.RoundTable;
 
 import java.util.List;
 import java.util.Map;
